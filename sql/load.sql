@@ -1,9 +1,7 @@
 USE festivalDB;
 
--- Απενεργοποίησε προσωρινά τους ελέγχους ξένων κλειδιών
 SET FOREIGN_KEY_CHECKS = 0;
 
--- Διέγραψε τα δεδομένα
 TRUNCATE TABLE artists;
 TRUNCATE TABLE location;
 TRUNCATE TABLE coordinates;
@@ -35,7 +33,6 @@ TRUNCATE TABLE performance_reviews;
 TRUNCATE TABLE desired_by_type;
 
 
--- Επανενεργοποίησε τους ελέγχους
 SET FOREIGN_KEY_CHECKS = 1;
 
 INSERT INTO coordinates(latitude, longitude)
