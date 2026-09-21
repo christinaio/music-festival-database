@@ -1,7 +1,5 @@
 USE festivalDB;
 
-
--- query 1
 SELECT 
     e.festival_year,
     pt.payment_type,
